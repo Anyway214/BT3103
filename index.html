@@ -40,7 +40,7 @@
            // Post to the counter to set it to zero. 
            fetch(this.databaseUrl, { 
               method:'put', 
-              body: JSON.stringify({'counter-ayw':newVal, "add-another-key" : "new-value"})
+              body: JSON.stringify({'counter':newVal, "add-another-key" : "new-value"})
 				    }) 
             .then(res=>res.json()) 
             .then(res => { 
